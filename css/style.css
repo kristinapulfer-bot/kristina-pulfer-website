@@ -458,7 +458,7 @@ section { padding: 5rem 0; }
 
 /* ---------- Project narrative (Dan Pearson format) ---------- */
 .dp-project-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 5vw; }
-.dp-section { max-width: 640px; margin: 0 0 1.8rem; }
+.dp-section { max-width: 640px; margin: 0 0 1.8rem auto; }
 .dp-section:last-child { margin-bottom: 0; }
 .dp-heading {
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-style: normal; font-weight: 700;
@@ -490,7 +490,7 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Project metadata table (Dan Pearson format) ---------- */
-.dp-meta { max-width: 640px; list-style: none; margin: 0; padding: 0; }
+.dp-meta { max-width: 640px; list-style: none; margin: 0 0 0 auto; padding: 0; }
 .dp-meta li {
   display: grid; grid-template-columns: 160px 1fr; gap: 1.5rem;
   padding: 0.85em 0; border-bottom: 1px solid var(--line);
@@ -512,15 +512,17 @@ section { padding: 5rem 0; }
   margin-top: 1rem;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6px;
 }
 .stack-gallery figure { margin: 0; overflow: hidden; }
-.stack-gallery img, .stack-gallery video { width: 100%; height: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 .stack-gallery figcaption { font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; color: var(--brown-soft); margin-top: 0.7rem; }
+
+.gallery-row { margin-bottom: 2.2rem; }
+.gallery-row:last-child { margin-bottom: 0; }
+.gallery-row.full img, .gallery-row.full video { width: 100%; height: auto; display: block; }
+.gallery-row.pair { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.gallery-row.pair img, .gallery-row.pair video { width: 100%; height: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 @media (max-width: 700px) {
-  .stack-gallery { grid-template-columns: 1fr; }
+  .gallery-row.pair { grid-template-columns: 1fr; }
 }
 
 /* ---------- Gallery ---------- */
