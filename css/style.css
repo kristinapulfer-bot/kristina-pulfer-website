@@ -397,6 +397,29 @@ section { padding: 5rem 0; }
   .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
 }
 
+.contact-gray {
+  background: var(--footer-gray);
+  padding: 3.4rem 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.contact-gray .footer-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  color: var(--brown);
+  text-transform: lowercase;
+  margin-bottom: 0.5em;
+}
+.contact-gray p { font-size: 0.92rem; color: var(--brown-soft); margin: 0 0 0.4em; }
+.contact-gray .contact-group { margin-top: 1.8rem; }
+.contact-gray .contact-group h4 { font-size: 0.85rem; margin-bottom: 0.8em; }
+.contact-gray .contact-group a {
+  display: block; font-size: 0.92rem; color: var(--brown-soft); margin-bottom: 0.4em;
+}
+.contact-gray .contact-group a:hover { color: var(--green-dark); }
+
 /* ---------- Project detail pages ---------- */
 .project-hero img { width: 100%; height: auto; max-height: 76vh; object-fit: cover; }
 

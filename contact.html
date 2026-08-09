@@ -17,7 +17,6 @@
     <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     <nav class="main-nav">
       <a href="index.html">Projects</a>
-      <a href="process.html">Methods</a>
       <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html" class="active">Contact</a>
@@ -35,85 +34,69 @@
   </div>
 </section>
 
-<section style="padding-top:5rem;">
-  <div class="container contact-inner">
+<section style="padding-top:3.5rem;">
+  <div class="container">
+    <div class="contact-gray">
+      <p class="footer-name">Kristina Pulfer</p>
+      <p>Salt Lake City, Utah</p>
+      <p>Serving the Salt Lake Valley, and plant consulting for firms further afield</p>
 
-    <div>
-      <p class="label">Contact Details</p>
+      <div class="contact-group">
+        <h4 class="label">Connect</h4>
+        <a href="tel:+18015837000">801-583-7000</a>
+        <a href="mailto:Kristinapulfer@gmail.com">Kristinapulfer@gmail.com</a>
+        <a href="https://instagram.com/kristinapulfer" target="_blank" rel="noopener">Instagram &mdash; @kristinapulfer</a>
+        <a href="https://instagram.com/onegirlgardens" target="_blank" rel="noopener">Instagram &mdash; @onegirlgardens</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:3.5rem;">
+  <div class="container" style="max-width:640px;">
+    <div class="estimate-block">
+      <p class="label">Start a Project</p>
       <hr class="divider">
-
-      <ul class="contact-details">
-        <li>
-          <span class="detail-key">Email</span>
-          <span class="detail-val"><a href="mailto:Kristinapulfer@gmail.com">Kristinapulfer@gmail.com</a></span>
-        </li>
-        <li>
-          <span class="detail-key">Phone</span>
-          <span class="detail-val"><a href="tel:+18015837000" class="call-button">Call 801-583-7000</a></span>
-        </li>
-        <li>
-          <span class="detail-key">Based</span>
-          <span class="detail-val">Salt Lake City, Utah<br><span style="color:var(--brown-soft); font-size:0.85rem;">Serving the Salt Lake Valley, and plant consulting for firms further afield</span></span>
-        </li>
-        <li>
-          <span class="detail-key">Rates</span>
-          <span class="detail-val">Retainer, or hourly at $150<br><span style="color:var(--brown-soft); font-size:0.85rem;">See the <a href="faq.html">FAQ</a> for how pay works</span></span>
-        </li>
-      </ul>
-
-      <div style="margin-top:2.6rem; padding-top:1.8rem; border-top:1px solid var(--line);">
-        <p class="label">Instagram</p>
-        <hr class="divider" style="margin:0.7rem 0 0.8rem;">
-        <p>Recent gardens and planting studies are posted <a href="https://instagram.com/kristinapulfer" target="_blank" rel="noopener" style="border-bottom:1px solid var(--line);">@kristinapulfer</a> and <a href="https://instagram.com/onegirlgardens" target="_blank" rel="noopener" style="border-bottom:1px solid var(--line);">@onegirlgardens</a>.</p>
-      </div>
+      <h3>Tell me about your garden</h3>
+      <p>Share a little about the site and what you're hoping for, and I'll follow up within a couple of days to set up a first conversation.</p>
+      <form class="estimate-form" action="https://formsubmit.co/Kristinapulfer@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry — kristinapulferlandscape.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div>
+          <label for="c-name">Name</label>
+          <input id="c-name" type="text" name="name" required autocomplete="name">
+        </div>
+        <div>
+          <label for="c-email">Email</label>
+          <input id="c-email" type="email" name="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="c-phone">Phone <span style="text-transform:none; letter-spacing:0; color:#B9A98F;">(optional)</span></label>
+          <input id="c-phone" type="tel" name="phone" autocomplete="tel">
+        </div>
+        <div>
+          <label for="c-location">Project Location</label>
+          <input id="c-location" type="text" name="project_location" placeholder="e.g. Salt Lake City, UT">
+        </div>
+        <div>
+          <label for="c-type">Project Type</label>
+          <select id="c-type" name="project_type">
+            <option value="Residential Garden Consult">Residential Garden Consult</option>
+            <option value="Full Planting Design">Full Planting Design</option>
+            <option value="Plant Consulting for a Firm">Plant Consulting for a Firm</option>
+            <option value="Ongoing Maintenance Oversight">Ongoing Maintenance Oversight</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="c-message">About Your Project</label>
+          <textarea id="c-message" name="message" placeholder="The site, what's growing there now, and what you're hoping for."></textarea>
+        </div>
+        <button type="submit">Send Inquiry</button>
+      </form>
     </div>
-
-    <div>
-      <div class="estimate-block">
-        <p class="label">Start a Project</p>
-        <hr class="divider">
-        <h3>Tell me about your garden</h3>
-        <p>Share a little about the site and what you're hoping for, and I'll follow up within a couple of days to set up a first conversation.</p>
-        <form class="estimate-form" action="https://formsubmit.co/Kristinapulfer@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="New inquiry — kristinapulferlandscape.com">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <div>
-            <label for="c-name">Name</label>
-            <input id="c-name" type="text" name="name" required autocomplete="name">
-          </div>
-          <div>
-            <label for="c-email">Email</label>
-            <input id="c-email" type="email" name="email" required autocomplete="email">
-          </div>
-          <div>
-            <label for="c-phone">Phone <span style="text-transform:none; letter-spacing:0; color:#B9A98F;">(optional)</span></label>
-            <input id="c-phone" type="tel" name="phone" autocomplete="tel">
-          </div>
-          <div>
-            <label for="c-location">Project Location</label>
-            <input id="c-location" type="text" name="project_location" placeholder="e.g. Salt Lake City, UT">
-          </div>
-          <div>
-            <label for="c-type">Project Type</label>
-            <select id="c-type" name="project_type">
-              <option value="Residential Garden Consult">Residential Garden Consult</option>
-              <option value="Full Planting Design">Full Planting Design</option>
-              <option value="Plant Consulting for a Firm">Plant Consulting for a Firm</option>
-              <option value="Ongoing Maintenance Oversight">Ongoing Maintenance Oversight</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div>
-            <label for="c-message">About Your Project</label>
-            <textarea id="c-message" name="message" placeholder="The site, what's growing there now, and what you're hoping for."></textarea>
-          </div>
-          <button type="submit">Send Inquiry</button>
-        </form>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -127,7 +110,6 @@
       <div>
         <h4 class="label">Site</h4>
         <a href="index.html">Projects</a>
-        <a href="process.html">Methods</a>
         <a href="about.html">About</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
@@ -136,7 +118,8 @@
         <h4 class="label">Contact</h4>
         <a href="mailto:Kristinapulfer@gmail.com">Kristinapulfer@gmail.com</a>
         <a href="tel:+18015837000">801-583-7000</a>
-        <a href="https://instagram.com/kristinapulfer" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://instagram.com/kristinapulfer" target="_blank" rel="noopener">Instagram &mdash; @kristinapulfer</a>
+        <a href="https://instagram.com/onegirlgardens" target="_blank" rel="noopener">Instagram &mdash; @onegirlgardens</a>
         <p style="margin-top:0.8em;">Salt Lake City, Utah</p>
       </div>
     </div>
