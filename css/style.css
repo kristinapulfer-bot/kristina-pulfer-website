@@ -126,6 +126,8 @@ section { padding: 5rem 0; }
 .section-alt { background: var(--cream-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .intro {
   max-width: 720px;
+  margin-left: 0;
+  margin-right: auto;
 }
 .intro p:first-of-type { font-size: 1rem; color: var(--brown); }
 
@@ -191,6 +193,14 @@ section { padding: 5rem 0; }
 .credentials li:last-child { border-bottom: 1px solid var(--line); }
 @media (max-width: 780px) {
   .team-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+/* Single team member, shown side-by-side: photo left, info right */
+.team-member-solo { display: grid; grid-template-columns: 280px 1fr; gap: 3.5rem; align-items: start; }
+.team-member-solo .team-member-img { margin-bottom: 0; }
+@media (max-width: 700px) {
+  .team-member-solo { grid-template-columns: 1fr; gap: 1.6rem; }
+  .team-member-solo .team-member-img { max-width: 280px; }
 }
 
 /* ---------- Two-column list block (services / locations) ---------- */
