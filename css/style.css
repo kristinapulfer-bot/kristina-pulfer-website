@@ -2,12 +2,13 @@
 
 :root {
   --cream: #FFFFFF;
-  --cream-alt: #F3F1F2;
-  --brown: #3B2A1E;
-  --brown-soft: #5C4A3C;
-  --green: #8C8C46;
-  --green-dark: #6D6E37;
-  --line: rgba(59, 42, 30, 0.14);
+  --cream-alt: #FFFFFF;
+  --footer-gray: #A9A9A5;
+  --brown: #000000;
+  --brown-soft: #1A1A1A;
+  --green: #000000;
+  --green-dark: #000000;
+  --line: rgba(0, 0, 0, 0.14);
   --max: 1180px;
 }
 
@@ -291,29 +292,25 @@ section { padding: 5rem 0; }
 
 /* ---------- Project grid (homepage) ---------- */
 .square-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3.2vw;
-  row-gap: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
   margin-top: 2.4rem;
 }
 .square-tile { display: block; }
-.square-tile .frame { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; }
+.square-tile .frame { width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: var(--line); }
 .square-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-.square-tile:hover img { transform: scale(1.04); }
-.square-caption { padding-top: 1.2rem; }
-.square-caption h3 { color: var(--brown); margin: 0 0 0.4em; font-size: 1.3rem; font-weight: 500; }
-.square-tile:hover .square-caption h3 { color: var(--green-dark); }
-.square-caption .location {
-  color: var(--brown-soft); font-family: 'Inter', sans-serif; font-size: 0.72rem;
-  letter-spacing: 0.1em; text-transform: uppercase; margin: 0;
+.square-tile:hover img { transform: scale(1.02); }
+.square-caption { padding-top: 1.4rem; max-width: 700px; }
+.square-caption h3 { color: var(--brown); margin: 0 0 0.5em; font-size: 1.8rem; font-weight: 400; }
+.square-caption .status {
+  display: flex; align-items: center; gap: 0.55em; margin: 0;
+  font-family: 'Inter', sans-serif; font-size: 0.68rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--brown-soft);
 }
-
-@media (max-width: 900px) {
-  .square-grid { grid-template-columns: repeat(2, 1fr); row-gap: 2.8rem; }
-}
-@media (max-width: 560px) {
-  .square-grid { grid-template-columns: 1fr; }
+.square-caption .status::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--brown); display: inline-block; flex-shrink: 0;
 }
 
 /* ---------- Contact page ---------- */
@@ -534,7 +531,7 @@ section { padding: 5rem 0; }
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 3.4rem 0 2.4rem;
-  background: var(--cream-alt);
+  background: var(--footer-gray);
 }
 .footer-grid {
   display: grid;
