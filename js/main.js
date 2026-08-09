@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var filterButtons = document.querySelectorAll('.filter-tabs button');
-  var items = document.querySelectorAll('.project-list-item');
+  var items = document.querySelectorAll('.square-tile');
   if (filterButtons.length && items.length) {
     filterButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
