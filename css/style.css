@@ -425,28 +425,18 @@ section { padding: 5rem 0; }
 .contact-gray .contact-group a:hover { color: var(--green-dark); }
 
 /* ---------- Project detail pages ---------- */
-.project-title-band {
-  background: var(--page-gray);
-  padding: 3.4rem 6vw 4.6rem;
-  text-align: center;
-  position: relative;
-}
-.project-title-band .studio-tag {
-  position: absolute; top: 1.8rem; right: 6vw;
-  font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 700;
-  letter-spacing: 0.25em; text-transform: lowercase; color: var(--brown);
-}
-.project-title-band h1 {
-  font-family: 'Inter', sans-serif; font-weight: 700; text-transform: lowercase;
-  font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0; letter-spacing: 0.01em;
-}
-.project-title-band .location {
-  font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 500;
-  letter-spacing: 0.15em; text-transform: lowercase; color: var(--brown-soft);
-  margin: 0.7rem 0 0;
-}
-.project-hero { width: 100%; height: 92vh; min-height: 480px; overflow: hidden; }
+.project-hero { position: relative; width: 100%; height: 92vh; min-height: 480px; overflow: hidden; }
 .project-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-hero-overlay {
+  position: absolute; top: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 1.8rem 6vw;
+}
+.project-hero-overlay .project-hero-title,
+.project-hero-overlay .studio-tag {
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem;
+  letter-spacing: 0.25em; text-transform: lowercase; color: #000; margin: 0;
+}
 
 .project-meta {
   list-style: none; margin: 1.3rem 0 1.8rem; padding: 0; max-width: 440px;
@@ -524,9 +514,10 @@ section { padding: 5rem 0; }
   margin-left: calc(50% - 50vw);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
 }
 .stack-gallery figure { margin: 0; overflow: hidden; }
-.stack-gallery img, .stack-gallery video { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.stack-gallery img, .stack-gallery video { width: 100%; height: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 .stack-gallery figcaption { font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.05em; color: var(--brown-soft); margin-top: 0.7rem; }
 @media (max-width: 700px) {
   .stack-gallery { grid-template-columns: 1fr; }
