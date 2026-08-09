@@ -60,6 +60,11 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   padding: 0 6vw;
 }
+.container-wide {
+  max-width: none;
+  margin: 0;
+  padding: 0 6vw;
+}
 
 /* ---------- Header / Nav ---------- */
 .site-header {
@@ -83,10 +88,10 @@ img { max-width: 100%; display: block; }
 
 .brand { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .brand-name {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
   color: var(--brown);
   text-transform: lowercase;
 }
@@ -146,6 +151,15 @@ section { padding: 5rem 0; }
 }
 .about-hero-inner { max-width: var(--max); margin: 0 auto; padding: 0 6vw; }
 .about-hero-inner h1 { max-width: 800px; margin-bottom: 0; }
+
+.simple-hero { padding: 3.4rem 0; }
+.simple-hero .about-hero-inner .label { margin-bottom: 0.6em; }
+.simple-hero .about-hero-inner h1 {
+  font-family: 'Inter', sans-serif; font-weight: 700; text-transform: lowercase;
+  font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: 0.01em;
+  margin-bottom: 0.7em;
+}
+.simple-hero .about-hero-inner p { max-width: 620px; }
 .about-hero-inner p { max-width: 620px; margin-top: 0; margin-bottom: 0; }
 
 /* ---------- Split-screen: image + type ---------- */
@@ -245,7 +259,12 @@ section { padding: 5rem 0; }
   color: rgba(251,249,243,0.85); margin-top: 0.8em; margin-bottom: 0;
   font-size: 0.8rem; letter-spacing: 0.2em;
 }
-.home-hero-text h1 { color: #FBF9F3; margin: 0; }
+.home-hero-text h1 {
+  color: #FBF9F3; margin: 0;
+  font-family: 'Inter', sans-serif; font-weight: 700;
+  letter-spacing: 0.02em; text-transform: lowercase;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
 
 @media (max-width: 760px) {
   .home-hero-text { max-width: 100%; padding: 0 6vw 2.6rem; }
