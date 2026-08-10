@@ -264,7 +264,7 @@ section { padding: 5rem 0; }
 }
 .home-hero-text {
   position: absolute; left: 0; bottom: 0; max-width: 700px;
-  text-align: left; padding: 0 4rem 3rem; z-index: 3;
+  text-align: left; padding: 0 6vw 3rem; z-index: 3;
 }
 .home-hero-text .label {
   color: rgba(251,249,243,0.85); margin-top: 0.8em; margin-bottom: 0;
@@ -306,7 +306,7 @@ section { padding: 5rem 0; }
 }
 .page-hero-text {
   position: absolute; left: 0; bottom: 0; max-width: 640px;
-  text-align: left; padding: 0 4rem 2.6rem; z-index: 2;
+  text-align: left; padding: 0 6vw 2.6rem; z-index: 2;
 }
 .page-hero-text .label {
   color: rgba(251,249,243,0.85); margin-bottom: 0.6em;
@@ -503,14 +503,14 @@ section { padding: 5rem 0; }
   margin-bottom: 0.5em; letter-spacing: 0;
 }
 .dp-section p {
-  font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.08rem;
-  line-height: 1.6; color: var(--brown-soft); margin-bottom: 0.8em;
+  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.95rem;
+  line-height: 1.7; color: var(--brown-soft); margin-bottom: 0.8em;
 }
-.dp-section p strong { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--brown); font-style: normal; }
+.dp-section p strong { font-weight: 600; color: var(--brown); font-style: normal; }
 .dp-section p em { font-style: italic; }
 .dp-section ul { list-style: none; padding: 0; margin: 0 0 0.8em; }
 .dp-section ul li {
-  font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.08rem; line-height: 1.6;
+  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.95rem; line-height: 1.7;
   color: var(--brown-soft); margin-bottom: 0.7em; padding-left: 1.1em; position: relative;
 }
 .dp-section ul li::before { content: "\2014"; position: absolute; left: 0; color: var(--green-dark); }
@@ -518,12 +518,12 @@ section { padding: 5rem 0; }
 /* ---------- Project pull-quote (Dan Pearson format) ---------- */
 .dp-quote { max-width: 640px; margin: 0 0 1.8rem; }
 .dp-quote blockquote {
-  margin: 0 0 0.8em; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic;
-  font-size: 1.08rem; line-height: 1.6; color: var(--brown-soft);
+  margin: 0 0 0.8em; font-family: 'Inter', sans-serif; font-weight: 300; font-style: italic;
+  font-size: 0.95rem; line-height: 1.7; color: var(--brown-soft);
 }
 .dp-quote cite {
-  display: block; font-style: normal; font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.95rem; color: var(--brown-soft);
+  display: block; font-style: normal; font-family: 'Inter', sans-serif;
+  font-size: 0.85rem; color: var(--brown-soft);
 }
 
 /* ---------- Project metadata table (Dan Pearson format) ---------- */
@@ -536,7 +536,7 @@ section { padding: 5rem 0; }
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.85rem;
   color: var(--brown); text-transform: lowercase;
 }
-.dp-meta .v { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.05rem; color: var(--brown-soft); }
+.dp-meta .v { font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.9rem; color: var(--brown-soft); }
 @media (max-width: 560px) {
   .dp-meta li { grid-template-columns: 1fr; gap: 0.3rem; }
 }
