@@ -202,7 +202,10 @@ section { padding: 5rem 0; }
 
 /* ---------- Single-column text block (methods/FAQ) ---------- */
 .methods-block { max-width: 900px; }
-.methods-block h2 { margin-bottom: 0; font-style: italic; }
+.methods-block h2 {
+  font-family: 'Inter', sans-serif; font-weight: 700; text-transform: lowercase;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem); letter-spacing: 0.01em; margin-bottom: 0;
+}
 .methods-block p { margin-bottom: 1.2rem; max-width: 720px; }
 
 /* ---------- Team / Principal ---------- */
