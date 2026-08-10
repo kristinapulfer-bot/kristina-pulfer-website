@@ -640,7 +640,7 @@ section { padding: 5rem 0; }
 .footer-grid {
   display: flex;
   justify-content: flex-end;
-  gap: 4.5rem;
+  gap: 3.5rem;
 }
 .footer-grid h4, .footer-grid .footer-name {
   font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.95rem;
