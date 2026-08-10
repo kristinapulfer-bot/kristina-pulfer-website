@@ -65,6 +65,11 @@ img { max-width: 100%; display: block; }
   margin: 0;
   padding: 0 6vw;
 }
+.text-band {
+  background: var(--page-gray);
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
 
 /* ---------- Header / Nav ---------- */
 .site-header {
