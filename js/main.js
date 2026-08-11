@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       nav.classList.toggle('open');
+      document.documentElement.classList.toggle('nav-open');
     });
   }
 
