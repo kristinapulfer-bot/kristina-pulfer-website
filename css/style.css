@@ -653,7 +653,7 @@ section { padding: 5rem 0; }
 .footer-grid h4, .footer-grid .footer-name {
   font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.95rem;
   letter-spacing: 0.15em; text-transform: lowercase; color: var(--brown);
-  line-height: 1.3; margin: 0 0 0.35em;
+  line-height: 1.3; margin: 0 0 1.6em;
 }
 .footer-grid p, .footer-grid a { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.95rem; line-height: 1.3; color: var(--brown-soft); margin: 0 0 0.2em; }
 .footer-grid a { display:block; }
