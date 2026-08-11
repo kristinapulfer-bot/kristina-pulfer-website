@@ -84,10 +84,11 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: auto;
   padding-top: 2.2rem;
   padding-bottom: 0;
+  padding-left: 3vw;
   position: relative;
 }
 
@@ -108,6 +109,24 @@ img { max-width: 100%; display: block; }
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 0.56rem; font-weight: 500;
   letter-spacing: 0.4em; text-transform: uppercase; color: var(--green-dark);
 }
+.nav-toggle::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin-top: 7px;
+  background: var(--green-dark);
+  animation: nav-toggle-slide 2.2s ease-in-out infinite;
+}
+@keyframes nav-toggle-slide {
+  0%, 100% { transform: translateX(0); opacity: 0.5; }
+  50% { transform: translateX(16px); opacity: 1; }
+}
+
+.brand-logo {
+  display: flex; align-items: center; z-index: 60; position: relative;
+}
+.brand-logo img { height: 34px; width: auto; display: block; }
 
 .main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
   align-items: flex-end; justify-content: center; padding: 2em 8vw; gap: 2.2em; margin-top: 0; transform: translateX(100%);
@@ -234,7 +253,7 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Homepage hero (rotating) ---------- */
-.home-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); }
+.home-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); margin-bottom: max(1.5in, 8vh); padding: 0 6vw; box-sizing: border-box; }
 .home-hero .hero-slide {
   position: absolute; inset: 0; z-index: 0;
   opacity: 0; transition: opacity 1.8s ease;
@@ -446,12 +465,12 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Project detail pages ---------- */
-.project-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); }
+.project-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); margin-bottom: max(1.5in, 8vh); padding: 0 6vw; box-sizing: border-box; }
 .project-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project-hero-overlay {
   position: absolute; top: 0; left: 0; right: 0;
   display: flex; justify-content: space-between; align-items: flex-start;
-  padding: 1.8rem 6vw;
+  padding: 1.8rem 0;
 }
 .project-hero-overlay .project-hero-title,
 .project-hero-overlay .studio-tag {
