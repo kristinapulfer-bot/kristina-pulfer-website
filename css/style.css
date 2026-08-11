@@ -74,71 +74,51 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Header / Nav ---------- */
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 50;
   background: #FFFFFF;
-  border-bottom: 1px solid var(--line);
+  border-bottom: none;
 }
 
 .site-header .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  padding-top: 0;
+  justify-content: flex-start;
+  height: auto;
+  padding-top: 2.2rem;
   padding-bottom: 0;
   position: relative;
 }
 
-.brand { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
-.brand-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.4em;
-  color: var(--brown);
-  text-transform: lowercase;
+.brand-icon { display: none; }
+
+.main-nav { display: none; }
+
+.nav-toggle {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  background: none; border: none; cursor: pointer;
+  z-index: 60; position: relative; padding: 0; text-align: left;
 }
-.brand-tag {
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
-  font-size: 0.56rem;
-  font-weight: 500;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--green-dark);
+.nav-toggle .toggle-name {
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500;
+  letter-spacing: 0.4em; color: var(--brown); text-transform: lowercase;
+}
+.nav-toggle .toggle-tag {
+  font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 0.56rem; font-weight: 500;
+  letter-spacing: 0.4em; text-transform: uppercase; color: var(--green-dark);
 }
 
-.main-nav { display: flex; gap: 0.2em; align-items: center; justify-content: flex-end; margin-top: 0; }
+.main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
+  align-items: flex-end; justify-content: center; padding: 2em 8vw; gap: 2.2em; margin-top: 0; transform: translateX(100%);
+  transition: transform 0.3s ease; z-index: 55; }
+.main-nav.open { display: flex; transform: translateX(0); }
 .main-nav a {
-  font-family: 'Inter', sans-serif;
-  text-transform: lowercase;
-  letter-spacing: 0.4em;
-  font-weight: 500;
-  font-size: 0.64rem;
-  color: var(--brown-soft);
-  padding: 0.5rem 0.85rem;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, color 0.2s;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.15rem;
+  letter-spacing: 0.4em; text-transform: lowercase; color: var(--brown);
+  padding: 0; border-bottom: none;
 }
-.main-nav a:hover, .main-nav a.active { color: var(--brown); border-bottom-color: var(--green); }
-
-.nav-toggle { display: none; }
-
-@media (max-width: 760px) {
-  .nav-toggle { display: block; background: none; border: none; font-size: 1.5rem; color: var(--brown); cursor: pointer; z-index: 60; position: relative; }
-  .main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
-    align-items: flex-end; justify-content: center; padding: 2em 8vw; gap: 2.2em; margin-top: 0; transform: translateX(100%);
-    transition: transform 0.3s ease; z-index: 55; }
-  .main-nav.open { transform: translateX(0); }
-  .main-nav a {
-    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.15rem;
-    letter-spacing: 0.4em; text-transform: lowercase; color: var(--brown);
-    padding: 0; border-bottom: none;
-  }
-  .main-nav a:hover, .main-nav a.active { color: var(--brown); border-bottom-color: transparent; opacity: 0.7; }
-}
+.main-nav a:hover, .main-nav a.active { color: var(--brown); opacity: 0.7; }
 
 /* ---------- Sections ---------- */
 section { padding: 5rem 0; }
@@ -254,7 +234,7 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Homepage hero (rotating) ---------- */
-.home-hero { position: relative; width: 100%; height: 92vh; min-height: 480px; overflow: hidden; }
+.home-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); }
 .home-hero .hero-slide {
   position: absolute; inset: 0; z-index: 0;
   opacity: 0; transition: opacity 1.8s ease;
@@ -466,7 +446,7 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Project detail pages ---------- */
-.project-hero { position: relative; width: 100%; height: 92vh; min-height: 480px; overflow: hidden; }
+.project-hero { position: relative; width: 100%; height: 80vh; min-height: 480px; overflow: hidden; margin-top: max(3in, 18vh); }
 .project-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project-hero-overlay {
   position: absolute; top: 0; left: 0; right: 0;
@@ -644,6 +624,7 @@ section { padding: 5rem 0; }
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 3.5rem 0 4.5rem;
+  margin-top: 1.5in;
   background: var(--footer-gray);
 }
 .footer-grid {
