@@ -331,9 +331,9 @@ section { padding: 5rem 0; }
 .projects-band { background: var(--page-gray); padding-bottom: 3.5rem; }
 .square-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 0.6rem;
-  row-gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.4rem;
+  row-gap: 3rem;
 }
 .square-tile { display: block; }
 .square-tile.is-hidden { display: none; }
