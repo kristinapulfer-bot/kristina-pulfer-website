@@ -89,7 +89,7 @@ img { max-width: 100%; display: block; }
   height: auto;
   padding-top: 1.5rem;
   padding-bottom: 0;
-  padding-left: 3vw;
+  padding-left: 6vw;
   position: relative;
 }
 
@@ -124,7 +124,7 @@ img { max-width: 100%; display: block; }
 .brand-logo {
   display: flex; align-items: center; z-index: 60; position: relative;
 }
-.brand-logo img { height: 24px; width: auto; display: block; }
+.brand-logo img { height: 30px; width: auto; display: block; }
 
 .main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
   align-items: center; justify-content: center; padding: 2em 8vw; gap: 2.2em; margin-top: 0; transform: translateX(100%);
@@ -251,7 +251,7 @@ section { padding: 5rem 0; }
 }
 
 /* ---------- Homepage hero (stacked) ---------- */
-.home-hero { width: 100%; margin-top: max(0.65in, 5vh); margin-bottom: max(1.5in, 8vh); padding: 0 3vw; box-sizing: border-box; }
+.home-hero { width: 100%; margin-top: max(0.65in, 5vh); margin-bottom: max(1.5in, 8vh); padding: 0 6vw; box-sizing: border-box; }
 .home-hero figure { margin: 0 0 14px; }
 .home-hero figure:last-child { margin-bottom: 0; }
 .home-hero img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
