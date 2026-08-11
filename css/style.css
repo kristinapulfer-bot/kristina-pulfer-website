@@ -642,7 +642,7 @@ section { padding: 5rem 0; }
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 7rem 0 11rem;
+  padding: 5rem 0 7rem;
   background: var(--footer-gray);
 }
 .footer-grid {
