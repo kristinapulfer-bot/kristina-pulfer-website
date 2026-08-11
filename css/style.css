@@ -96,7 +96,7 @@ img { max-width: 100%; display: block; }
 .brand-name {
   font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.4em;
   color: var(--brown);
   text-transform: lowercase;
@@ -115,7 +115,7 @@ img { max-width: 100%; display: block; }
   font-family: 'Inter', sans-serif;
   text-transform: lowercase;
   letter-spacing: 0.4em;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.64rem;
   color: var(--brown-soft);
   padding: 0.5rem 0.85rem;
@@ -653,7 +653,7 @@ section { padding: 5rem 0; }
   gap: 3.5rem;
 }
 .footer-grid h4, .footer-grid .footer-name {
-  font-family: 'Inter', sans-serif; font-weight: 400; font-size: 0.95rem;
+  font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.95rem;
   letter-spacing: 0.4em; text-transform: lowercase; color: var(--brown);
   line-height: 1.3; margin: 0 0 1.6em;
 }
