@@ -126,7 +126,7 @@ img { max-width: 100%; display: block; }
   display: flex; align-items: center; z-index: 60; position: relative;
 }
 .brand-logo img { height: 48px; width: auto; display: block; }
-html.nav-open .brand-logo { background: var(--footer-gray); }
+html.nav-open .brand-logo { display: none; }
 
 .main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
   align-items: center; justify-content: center; padding: 2em 8vw; gap: 2.2em; margin-top: 0; transform: translateX(100%);
