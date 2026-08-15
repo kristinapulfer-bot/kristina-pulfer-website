@@ -24,7 +24,7 @@ body {
   background: var(--cream);
   color: var(--brown-soft);
   font-family: 'Inter', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -32,7 +32,7 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
   color: var(--brown);
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.2;
   margin: 0 0 0.5em;
@@ -53,7 +53,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-size: 0.65rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--green-dark);
 }
 
@@ -104,7 +104,7 @@ img { max-width: 100%; display: block; }
   z-index: 60; position: relative; padding: 0; text-align: left;
 }
 .nav-toggle .toggle-name {
-  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700;
   letter-spacing: 0.4em; color: var(--brown); text-transform: lowercase;
 }
 .nav-toggle .toggle-tag {
@@ -193,7 +193,7 @@ section { padding: 5rem 0; }
 .pull-quote { max-width: 760px; margin: 0 auto; text-align: center; }
 .pull-quote blockquote {
   margin: 0; font-family: 'Inter', Helvetica, Arial, sans-serif; font-style: italic;
-  font-weight: 300; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.4; color: var(--brown);
+  font-weight: 700; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.4; color: var(--brown);
 }
 .pull-quote cite {
   display: block; margin-top: 1.4rem; font-style: normal;
@@ -245,7 +245,7 @@ section { padding: 5rem 0; }
 .methods-list li:first-child { border-top: 1px solid var(--line); }
 .methods-list li strong {
   display: block; font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 1.05rem;
-  font-weight: 400; margin-bottom: 0.3rem;
+  font-weight: 700; margin-bottom: 0.3rem;
 }
 .methods-list-avoid li strong { color: #8B5A46; }
 .methods-list-use li strong { color: var(--green-dark); }
@@ -360,7 +360,7 @@ section { padding: 5rem 0; }
 }
 .square-caption .location {
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-style: normal;
-  font-size: 0.95rem; font-weight: 300; line-height: 1.7;
+  font-size: 0.95rem; font-weight: 700; line-height: 1.7;
   color: var(--brown-soft); text-transform: lowercase; margin: 0;
 }
 
@@ -401,7 +401,7 @@ section { padding: 5rem 0; }
 }
 .call-button:hover { background: var(--brown); color: var(--cream); text-decoration: none; }
 
-.estimate-block h3 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 300; margin-bottom: 0.75rem; }
+.estimate-block h3 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 700; margin-bottom: 0.75rem; }
 .estimate-block > p { max-width: 460px; margin-bottom: 2.5rem; }
 
 .estimate-form { display: flex; flex-direction: column; gap: 2rem; margin-top: 0; }
@@ -411,7 +411,7 @@ section { padding: 5rem 0; }
 }
 .estimate-form input, .estimate-form select, .estimate-form textarea {
   width: 100%; padding: 0.5em 0; border: none; border-bottom: 1px solid var(--line);
-  outline: none; font-family: 'Inter', sans-serif; font-weight: 300; font-size: 0.875rem; line-height: 1.6; background: transparent;
+  outline: none; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.875rem; line-height: 1.6; background: transparent;
   color: var(--brown); border-radius: 0; -webkit-appearance: none; appearance: none;
   transition: border-color 0.2s;
 }
@@ -475,7 +475,7 @@ section { padding: 5rem 0; }
 }
 .project-hero-overlay .project-hero-title,
 .project-hero-overlay .studio-tag {
-  font-family: 'Inter', sans-serif; font-weight: 400; font-size: 0.85rem;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.85rem;
   letter-spacing: 0.4em; text-transform: lowercase; color: #000; margin: 0;
 }
 
@@ -507,14 +507,14 @@ section { padding: 5rem 0; }
   margin-bottom: 0.5em; letter-spacing: 0;
 }
 .dp-section p {
-  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.95rem;
+  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.95rem;
   line-height: 1.7; color: var(--brown-soft); margin-bottom: 0.8em;
 }
 .dp-section p strong { font-weight: 600; color: var(--brown); font-style: normal; }
 .dp-section p em { font-style: italic; }
 .dp-section ul { list-style: none; padding: 0; margin: 0 0 0.8em; }
 .dp-section ul li {
-  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.95rem; line-height: 1.7;
+  font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.95rem; line-height: 1.7;
   color: var(--brown-soft); margin-bottom: 0.7em; padding-left: 1.1em; position: relative;
 }
 .dp-section ul li::before { content: "\2014"; position: absolute; left: 0; color: var(--green-dark); }
@@ -522,7 +522,7 @@ section { padding: 5rem 0; }
 /* ---------- Project pull-quote (Dan Pearson format) ---------- */
 .dp-quote { max-width: 640px; margin: 0 0 1.8rem; }
 .dp-quote blockquote {
-  margin: 0 0 0.8em; font-family: 'Inter', sans-serif; font-weight: 300; font-style: italic;
+  margin: 0 0 0.8em; font-family: 'Inter', sans-serif; font-weight: 700; font-style: italic;
   font-size: 0.95rem; line-height: 1.7; color: var(--brown-soft);
 }
 .dp-quote cite {
@@ -540,7 +540,7 @@ section { padding: 5rem 0; }
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.85rem;
   color: var(--brown); text-transform: lowercase;
 }
-.dp-meta .v { font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 0.9rem; color: var(--brown-soft); }
+.dp-meta .v { font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.9rem; color: var(--brown-soft); }
 @media (max-width: 560px) {
   .dp-meta li { grid-template-columns: 1fr; gap: 0.3rem; }
 }
@@ -620,7 +620,7 @@ section { padding: 5rem 0; }
 }
 .exp-entry .org .dates {
   font-family: 'Inter', sans-serif; font-size: 0.72rem; letter-spacing: 0.04em;
-  color: var(--brown-soft); font-weight: 400; white-space: nowrap;
+  color: var(--brown-soft); font-weight: 700; white-space: nowrap;
 }
 .exp-entry .role { font-style: italic; color: var(--brown-soft); font-size: 0.96rem; margin: 0.15rem 0 0.7rem; }
 .exp-entry .summary { font-size: 0.92rem; color: var(--brown-soft); line-height: 1.55; margin: 0 0 0.7rem; }
@@ -653,7 +653,7 @@ section { padding: 5rem 0; }
   gap: 3.5rem;
 }
 .footer-grid h4, .footer-grid .footer-name {
-  font-family: 'Inter', sans-serif; font-weight: 500; font-size: 0.95rem;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.95rem;
   letter-spacing: 0.4em; text-transform: lowercase; color: var(--brown);
   line-height: 1.3; margin: 0 0 1.6em;
 }
