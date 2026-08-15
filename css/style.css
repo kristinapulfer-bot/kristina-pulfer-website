@@ -89,9 +89,12 @@ img { max-width: 100%; display: block; }
   height: auto;
   padding-top: 1.5rem;
   padding-bottom: 0;
-  padding-left: min(2in, 15vw);
-  padding-right: min(2in, 15vw);
+  padding-left: 2in;
+  padding-right: 2in;
   position: relative;
+}
+@media (max-width: 700px) {
+  .site-header .container { padding-left: 1rem; padding-right: 1rem; }
 }
 
 .brand-icon { display: none; }
@@ -401,7 +404,7 @@ section { padding: 5rem 0; }
 }
 .call-button:hover { background: var(--brown); color: var(--cream); text-decoration: none; }
 
-.estimate-block h3 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); font-weight: 700; margin-bottom: 0.75rem; }
+.estimate-block h3 { font-family: 'Inter', Helvetica, Arial, sans-serif; font-size: 0.95rem; font-weight: 700; text-transform: lowercase; letter-spacing: 0.4em; margin-bottom: 0.75rem; }
 .estimate-block > p { max-width: 460px; margin-bottom: 2.5rem; }
 
 .estimate-form { display: flex; flex-direction: column; gap: 2rem; margin-top: 0; }
@@ -503,8 +506,8 @@ section { padding: 5rem 0; }
 .dp-section:last-child { margin-bottom: 0; }
 .dp-heading {
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-style: normal; font-weight: 700;
-  font-size: 1.05rem; text-transform: none; color: var(--brown);
-  margin-bottom: 0.5em; letter-spacing: 0;
+  font-size: 0.95rem; text-transform: lowercase; color: var(--brown);
+  margin-bottom: 0.5em; letter-spacing: 0.4em;
 }
 .dp-section p {
   font-family: 'Inter', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.95rem;
