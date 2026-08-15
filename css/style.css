@@ -87,6 +87,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: space-between;
   height: auto;
+  max-width: none;
   padding-top: 1.5rem;
   padding-bottom: 0;
   padding-left: 2in;
