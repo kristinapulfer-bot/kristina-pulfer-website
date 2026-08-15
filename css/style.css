@@ -77,7 +77,7 @@ img { max-width: 100%; display: block; }
 .site-header {
   position: relative;
   z-index: 50;
-  background: #FFFFFF;
+  background: var(--cream);
   border-bottom: none;
 }
 
