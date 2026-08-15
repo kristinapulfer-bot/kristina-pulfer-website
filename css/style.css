@@ -89,8 +89,8 @@ img { max-width: 100%; display: block; }
   height: auto;
   padding-top: 1.5rem;
   padding-bottom: 0;
-  padding-left: min(3in, 20vw);
-  padding-right: min(3in, 20vw);
+  padding-left: min(2in, 15vw);
+  padding-right: min(2in, 15vw);
   position: relative;
 }
 
