@@ -90,6 +90,8 @@ img { max-width: 100%; display: block; }
   height: 64px;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 2vw;
+  padding-right: 2vw;
   position: relative;
 }
 
