@@ -90,8 +90,8 @@ img { max-width: 100%; display: block; }
   max-width: none;
   padding-top: 1.5rem;
   padding-bottom: 0;
-  padding-left: 1in;
-  padding-right: 2in;
+  padding-left: 2in;
+  padding-right: 0.5rem;
   position: relative;
 }
 @media (max-width: 700px) {
@@ -128,7 +128,9 @@ img { max-width: 100%; display: block; }
 
 .brand-logo {
   display: flex; align-items: center; z-index: 60; position: relative;
+  order: 2;
 }
+.nav-toggle { order: 1; }
 .brand-logo img { height: 48px; width: auto; display: block; }
 html.nav-open .brand-logo { display: none; }
 
