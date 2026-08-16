@@ -88,10 +88,11 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  max-width: none;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   position: relative;
 }
 
