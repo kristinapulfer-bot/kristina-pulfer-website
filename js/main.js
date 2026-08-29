@@ -54,4 +54,24 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  var accordionItems = document.querySelectorAll('.accordion-item');
+  if (accordionItems.length) {
+    accordionItems.forEach(function (item) {
+      var trigger = item.querySelector('.accordion-trigger');
+      var icon = item.querySelector('.accordion-icon');
+      trigger.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        accordionItems.forEach(function (other) {
+          other.classList.remove('open');
+          var otherIcon = other.querySelector('.accordion-icon');
+          if (otherIcon) otherIcon.textContent = '+';
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          if (icon) icon.textContent = '−';
+        }
+      });
+    });
+  }
 });
