@@ -644,7 +644,7 @@ section { padding: 5rem 0; }
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 3.5rem 0 4.5rem;
+  padding: 0.5cm 0 4.5rem;
   margin-top: 1.5in;
   background: var(--footer-gray);
 }
