@@ -476,7 +476,7 @@ section { padding: 5rem 0; }
 .project-hero { position: relative; width: 100%; height: 92vh; min-height: 560px; overflow: hidden; margin-top: max(0.75in, 8vh); margin-bottom: max(0.75in, 4vh); padding: 0 3vw; box-sizing: border-box; }
 .project-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project-title-sticky {
-  position: sticky; top: 8cm; z-index: 40;
+  position: sticky; top: 64px; z-index: 40;
   background: var(--cream);
   padding: 1rem 3vw;
 }
