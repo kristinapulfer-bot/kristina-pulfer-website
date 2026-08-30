@@ -132,7 +132,7 @@ img { max-width: 100%; display: block; }
 .brand-logo img { height: 48px; width: auto; display: block; }
 html.nav-open .brand-logo { display: none; }
 
-.main-nav { position: fixed; inset: 0; background: rgba(169, 169, 165, 0.9); flex-direction: column;
+.main-nav { position: fixed; inset: 0; background: var(--footer-gray); flex-direction: column;
   align-items: flex-end; justify-content: flex-start;
   padding: calc(0.5cm + 48px + 0.5cm) 12px 2em var(--edge);
   gap: 16px; margin-top: 0; transform: translateX(100%);
