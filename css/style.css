@@ -59,6 +59,10 @@ img { max-width: 100%; display: block; }
   color: var(--green-dark);
 }
 
+.page-title-block { text-align: center; padding: 3rem 0 2rem; }
+.page-title-block .label { display: block; margin-bottom: 0.7em; }
+.page-title-block h1 { margin: 0; font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
+
 .container {
   max-width: var(--max);
   margin: 0 auto;
@@ -80,7 +84,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: #FFFFFF;
+  background: transparent;
 }
 
 .site-header .container {
@@ -342,8 +346,6 @@ section { padding: 5rem 0; }
   .page-hero { height: 38vh; min-height: 280px; }
   .page-hero-text { padding: 0 var(--edge) 2rem; }
 }
-
-.selected-heading { text-align: left; padding: 0; }
 
 /* ---------- Project grid (homepage) ---------- */
 /* ---------- Project filter tabs (Dan Pearson format) ---------- */
