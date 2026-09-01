@@ -2,9 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');
   if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      document.documentElement.classList.toggle('nav-open');
+    toggle.addEventListener('click', function (e) {
+      if (window.matchMedia('(max-width: 700px)').matches) {
+        e.preventDefault();
+        nav.classList.toggle('open');
+        document.documentElement.classList.toggle('nav-open');
+      }
     });
   }
 
